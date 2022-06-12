@@ -28,13 +28,13 @@
 
             h1 {
                 font-size: 1.1rem;
-                font-weight: 400;
+                font-weight: 300;
                 
             }
 
             h2 {
                 font-size: 0.9rem;
-                font-weight: 400;
+                font-weight: 300;
             }
 
             .business-name {
@@ -79,14 +79,15 @@
             .email-telephone {
                 display: flex;
                 margin-top: 5px;
-            }
-
-            .telephone {
-                margin-left: 20px;
+                flex-direction: column;
             }
 
             .website {
-                margin-top: 5px;
+                margin-top: 3px;
+            }
+
+            .telephone {
+                margin-top: 3px;
             }
 
             .website > a, .telephone > a, .email > a {
@@ -97,6 +98,7 @@
             .company-socials {
                 display: flex;
                 justify-content: space-between;
+                width: 280px;
             }
 
             #envelope, #phone, #globe {
@@ -113,27 +115,8 @@
                 margin-right: 9px;
             }
 
-            /* Small Screens */
-
-            @media screen and (max-width: 575px) {
-
-                .company-socials {
-                    width: 300px;
-                }
-
-                .email-telephone {
-                    flex-direction: column;
-                }
-
-                .telephone {
-                    margin-left: 0;
-                    margin-top: 5px;
-                }
-
-                .email, .telephone, .website {
-                    font-size: 0.9rem;
-                }
-
+            .website > a, .telephone > a, .email > a {
+                font-size: 0.8rem;
             }
 
         </style>
