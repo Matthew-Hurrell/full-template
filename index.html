@@ -5,16 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="https://kit.fontawesome.com/008ae79857.js" crossorigin="anonymous"></script>
         <style>
-
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
             * {
                 margin: 0;
                 border: 0;
                 padding: 0;
-                font-family: 'Roboto', sans-serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
             #artisan-logo {
@@ -30,18 +27,24 @@
             }
 
             h1 {
-                font-size: large;
+                font-size: 1.1rem;
                 font-weight: 400;
                 
             }
 
             h2 {
-                font-size: medium;
+                font-size: 0.9rem;
                 font-weight: 400;
+            }
+
+            .business-name {
+                font-size: 0.9rem;
+                
             }
 
             .job-role {
                 font-weight: 300;
+                margin-top: 5px;
             }
 
             .name {
@@ -88,6 +91,7 @@
 
             .website > a, .telephone > a, .email > a {
                 color: rgb(28, 28, 28);
+                font-size: 0.85rem;
             }
 
             .company-socials {
@@ -109,6 +113,29 @@
                 margin-right: 9px;
             }
 
+            /* Small Screens */
+
+            @media screen and (max-width: 575px) {
+
+                .company-socials {
+                    width: 300px;
+                }
+
+                .email-telephone {
+                    flex-direction: column;
+                }
+
+                .telephone {
+                    margin-left: 0;
+                    margin-top: 5px;
+                }
+
+                .email, .telephone, .website {
+                    font-size: 0.9rem;
+                }
+
+            }
+
         </style>
     </head>
     <body>
@@ -124,7 +151,7 @@
                     </div>
                 </div>
                 <div class="company-socials">
-                    <h2>Artisan Live Entertainment</h2>
+                    <h2 class="business-name">Artisan Live Entertainment</h2>
                     <div class="socials">
                         <a href="https://www.instagram.com/artisanliveentertainment" target="_blank"><img src="https://i.ibb.co/Q8Dp9R5/instagram-brands.png" alt="instagram-brands" id="instagram"></a>
                         <a href="https://www.facebook.com/artisanliveentertainment" target="_blank"><img src="https://i.ibb.co/J5QFM6K/facebook-brands.png" alt="facebook-brands" id="facebook"></a>
